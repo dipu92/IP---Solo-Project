@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: white;
+    padding: 20px;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Calculator */
+
+#calculator {
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 300px;
+    overflow: hidden;
+    align-items: center;
+    margin-top: -20px;
+}
+
+h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 00px;
+    color: rgb(7, 30, 231);
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 4rem;
+    border: none;
+    background-color: hsl(0, 2%, 24%);
+    color: white;
+    text-align: right;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+
+button:active {
+    background-color: hsl(0, 0%, 50%);
+}
+
+.operator-btn {
+    background-color: hsl(35, 100%, 55%);
+}
+
+.operator-btn:hover {
+    background-color: hsl(35, 100%, 65%);
+}
+
+.operator-btn:active {
+    background-color: hsl(35, 100%, 75%);
+}
+
+/* Timer */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(18, 9, 138);
+}
+
+.hero h1 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: rgb(255, 0, 0);
+}
+
+/* Different Colors for Each Time */
+
+#days {
+    color: rgb(0, 0, 0);
+    background-color: rgba(244, 188, 4, 0.396);
+}
+
+#hours {
+    color: rgb(0, 5, 0);
+    background-color: rgba(3, 251, 32, 0.457);
+}
+
+#minutes {
+    color: rgb(0, 5, 0);
+    background-color: rgba(205, 3, 251, 0.457);
+}
+
+#seconds {
+    color: rgb(0, 0, 0);
+    background-color: rgba(11, 3, 251, 0.636);
+}
+
+.timebox {
+    display: flex;
+    gap: 20px;
+}
+
+.time {
+    text-align: center;
+}
+
+.time h2 {
+    width: 90px;
+    padding: 10px;
+
+    border: 3px solid black;
+    border-radius: 15px;
+
+    background-color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
